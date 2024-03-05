@@ -28,18 +28,18 @@ Partial Class frmBooks
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.dgBooks = New Guna.UI2.WinForms.Guna2DataGridView()
-        Me.BooksellerDataSet = New elibrary.booksellerDataSet()
-        Me.BooksellerDataSetBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.BookTableBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.BookTableTableAdapter = New elibrary.booksellerDataSetTableAdapters.bookTableTableAdapter()
         Me.BookIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.BookNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.AuthorNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GenreDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.BookTableBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.BooksellerDataSetBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.BooksellerDataSet = New elibrary.booksellerDataSet()
+        Me.BookTableTableAdapter = New elibrary.booksellerDataSetTableAdapters.bookTableTableAdapter()
         CType(Me.dgBooks, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.BooksellerDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.BooksellerDataSetBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BookTableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BooksellerDataSetBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BooksellerDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'dgBooks
@@ -47,6 +47,8 @@ Partial Class frmBooks
         DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
         Me.dgBooks.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.dgBooks.AutoGenerateColumns = False
+        Me.dgBooks.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.dgBooks.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Raised
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -55,7 +57,8 @@ Partial Class frmBooks
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgBooks.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
-        Me.dgBooks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgBooks.ColumnHeadersHeight = 18
+        Me.dgBooks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
         Me.dgBooks.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.BookIDDataGridViewTextBoxColumn, Me.BookNameDataGridViewTextBoxColumn, Me.AuthorNameDataGridViewTextBoxColumn, Me.GenreDataGridViewTextBoxColumn})
         Me.dgBooks.DataSource = Me.BookTableBindingSource
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
@@ -67,13 +70,13 @@ Partial Class frmBooks
         DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.dgBooks.DefaultCellStyle = DataGridViewCellStyle3
         Me.dgBooks.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.dgBooks.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.dgBooks.GridColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.dgBooks.Location = New System.Drawing.Point(0, 0)
         Me.dgBooks.Name = "dgBooks"
         Me.dgBooks.RowHeadersVisible = False
         Me.dgBooks.RowHeadersWidth = 51
         DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Jellee Bold", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Jellee Bold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dgBooks.RowsDefaultCellStyle = DataGridViewCellStyle4
         Me.dgBooks.RowTemplate.Height = 24
         Me.dgBooks.Size = New System.Drawing.Size(880, 630)
@@ -83,13 +86,13 @@ Partial Class frmBooks
         Me.dgBooks.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty
         Me.dgBooks.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty
         Me.dgBooks.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty
-        Me.dgBooks.ThemeStyle.BackColor = System.Drawing.Color.White
-        Me.dgBooks.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.dgBooks.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.dgBooks.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.dgBooks.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dgBooks.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.dgBooks.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.dgBooks.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(161, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.dgBooks.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Raised
+        Me.dgBooks.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Jellee Bold", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dgBooks.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White
-        Me.dgBooks.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgBooks.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
         Me.dgBooks.ThemeStyle.HeaderStyle.Height = 18
         Me.dgBooks.ThemeStyle.ReadOnly = False
         Me.dgBooks.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White
@@ -99,25 +102,6 @@ Partial Class frmBooks
         Me.dgBooks.ThemeStyle.RowsStyle.Height = 24
         Me.dgBooks.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.dgBooks.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        '
-        'BooksellerDataSet
-        '
-        Me.BooksellerDataSet.DataSetName = "booksellerDataSet"
-        Me.BooksellerDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'BooksellerDataSetBindingSource
-        '
-        Me.BooksellerDataSetBindingSource.DataSource = Me.BooksellerDataSet
-        Me.BooksellerDataSetBindingSource.Position = 0
-        '
-        'BookTableBindingSource
-        '
-        Me.BookTableBindingSource.DataMember = "bookTable"
-        Me.BookTableBindingSource.DataSource = Me.BooksellerDataSetBindingSource
-        '
-        'BookTableTableAdapter
-        '
-        Me.BookTableTableAdapter.ClearBeforeFill = True
         '
         'BookIDDataGridViewTextBoxColumn
         '
@@ -147,6 +131,25 @@ Partial Class frmBooks
         Me.GenreDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.GenreDataGridViewTextBoxColumn.Name = "GenreDataGridViewTextBoxColumn"
         '
+        'BookTableBindingSource
+        '
+        Me.BookTableBindingSource.DataMember = "bookTable"
+        Me.BookTableBindingSource.DataSource = Me.BooksellerDataSetBindingSource
+        '
+        'BooksellerDataSetBindingSource
+        '
+        Me.BooksellerDataSetBindingSource.DataSource = Me.BooksellerDataSet
+        Me.BooksellerDataSetBindingSource.Position = 0
+        '
+        'BooksellerDataSet
+        '
+        Me.BooksellerDataSet.DataSetName = "booksellerDataSet"
+        Me.BooksellerDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'BookTableTableAdapter
+        '
+        Me.BookTableTableAdapter.ClearBeforeFill = True
+        '
         'frmBooks
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -157,9 +160,9 @@ Partial Class frmBooks
         Me.Name = "frmBooks"
         Me.Text = "frmBooks"
         CType(Me.dgBooks, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.BooksellerDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.BooksellerDataSetBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BookTableBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BooksellerDataSetBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BooksellerDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

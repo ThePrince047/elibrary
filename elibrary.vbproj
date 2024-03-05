@@ -255,6 +255,8 @@
     <Content Include="bookseller.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\mdem7_512.png" />
+    <None Include="Resources\download.jpeg" />
     <None Include="Resources\book.gif" />
     <None Include="Resources\booksplash.gif" />
     <None Include="Resources\book-stack.png" />

@@ -1,4 +1,5 @@
-﻿Public Class frmDashboard
+﻿Imports System.Diagnostics
+Public Class frmDashboard
     Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles btnAccount.Click
         frmlogin.Show()
         Me.Hide()
@@ -16,4 +17,20 @@
 
     End Sub
 
+    Private Sub btnBook1_Click(sender As Object, e As EventArgs) Handles btnBook1.Click
+        Dim path As String = "D:\SYBCA\Hidden Hindu-2.pdf"
+        Process.Start(path)
+    End Sub
+
+    Private Sub btnBook2_Click(sender As Object, e As EventArgs) Handles btnBook2.Click
+        Dim path As String = "D:\SYBCA\how to win friends.pdf"
+        Process.Start(path)
+    End Sub
+
+
+
+    'Private Sub Guna2Button1_Click_1(sender As Object, e As EventArgs)
+    '    Dim path As String = "D:\SYBCA\BCASEM4_REG_MAR2024.pdf"
+    '    System.Diagnostics.Process.Start(path)
+    'End Sub
 End Class
