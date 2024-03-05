@@ -14,6 +14,21 @@
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -24,6 +39,7 @@
     <OutputPath>bin\Debug\</OutputPath>
     <DocumentationFile>elibrary.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -88,6 +104,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>booksellerDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="booksellerDataSet11.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>booksellerDataSet11.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -119,16 +140,10 @@
     <Compile Include="frmSignup.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmSplashscreen.Designer.vb">
-      <DependentUpon>frmSplashscreen.vb</DependentUpon>
+    <Compile Include="frmUsers.Designer.vb">
+      <DependentUpon>frmUsers.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmSplashscreen.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmUser.Designer.vb">
-      <DependentUpon>frmUser.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmUser.vb">
+    <Compile Include="frmUsers.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -146,6 +161,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="splashscreen.Designer.vb">
+      <DependentUpon>splashscreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="splashscreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
@@ -154,23 +175,26 @@
     <EmbeddedResource Include="frmAdminPortal.resx">
       <DependentUpon>frmAdminPortal.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmBooks.resx">
+      <DependentUpon>frmBooks.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDashboard.resx">
       <DependentUpon>frmDashboard.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSignup.resx">
       <DependentUpon>frmSignup.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmSplashscreen.resx">
-      <DependentUpon>frmSplashscreen.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmUser.resx">
-      <DependentUpon>frmUser.vb</DependentUpon>
+    <EmbeddedResource Include="frmUsers.resx">
+      <DependentUpon>frmUsers.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="splashscreen.resx">
+      <DependentUpon>splashscreen.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -184,6 +208,17 @@
     </None>
     <None Include="booksellerDataSet1.xss">
       <DependentUpon>booksellerDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="booksellerDataSet11.xsc">
+      <DependentUpon>booksellerDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="booksellerDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>booksellerDataSet11.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="booksellerDataSet11.xss">
+      <DependentUpon>booksellerDataSet11.xsd</DependentUpon>
     </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
@@ -202,6 +237,26 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-book.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bookseller.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\book.gif" />
+    <None Include="Resources\booksplash.gif" />
+    <None Include="Resources\book-stack.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
