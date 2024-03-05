@@ -34,6 +34,8 @@ Partial Class frmAdminPortal
         Me.pnlMain = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2DragControl1 = New Guna.UI2.WinForms.Guna2DragControl(Me.components)
         Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.lblName = New System.Windows.Forms.Label()
         Me.pnltop.SuspendLayout()
         Me.Guna2Panel2.SuspendLayout()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -94,6 +96,8 @@ Partial Class frmAdminPortal
         'Guna2Panel2
         '
         Me.Guna2Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(161, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.Guna2Panel2.Controls.Add(Me.lblName)
+        Me.Guna2Panel2.Controls.Add(Me.Label2)
         Me.Guna2Panel2.Controls.Add(Me.Guna2Button1)
         Me.Guna2Panel2.Controls.Add(Me.btnAccount)
         Me.Guna2Panel2.Controls.Add(Me.btnTest)
@@ -114,7 +118,7 @@ Partial Class frmAdminPortal
         Me.Guna2Button1.FillColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(54, Byte), Integer), CType(CType(24, Byte), Integer))
         Me.Guna2Button1.Font = New System.Drawing.Font("Jellee Bold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2Button1.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button1.Location = New System.Drawing.Point(19, 103)
+        Me.Guna2Button1.Location = New System.Drawing.Point(19, 185)
         Me.Guna2Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Guna2Button1.Name = "Guna2Button1"
         Me.Guna2Button1.Size = New System.Drawing.Size(181, 57)
@@ -148,7 +152,7 @@ Partial Class frmAdminPortal
         Me.btnTest.FillColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(54, Byte), Integer), CType(CType(24, Byte), Integer))
         Me.btnTest.Font = New System.Drawing.Font("Jellee Bold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnTest.ForeColor = System.Drawing.Color.White
-        Me.btnTest.Location = New System.Drawing.Point(19, 22)
+        Me.btnTest.Location = New System.Drawing.Point(19, 104)
         Me.btnTest.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnTest.Name = "btnTest"
         Me.btnTest.Size = New System.Drawing.Size(181, 57)
@@ -181,6 +185,28 @@ Partial Class frmAdminPortal
         Me.Guna2PictureBox2.TabIndex = 4
         Me.Guna2PictureBox2.TabStop = False
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Jellee Bold", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(26, 14)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(105, 22)
+        Me.Label2.TabIndex = 2
+        Me.Label2.Text = "Welcome ,"
+        '
+        'lblName
+        '
+        Me.lblName.AutoSize = True
+        Me.lblName.Font = New System.Drawing.Font("Jellee Bold", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblName.ForeColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.lblName.Location = New System.Drawing.Point(24, 36)
+        Me.lblName.Name = "lblName"
+        Me.lblName.Size = New System.Drawing.Size(110, 34)
+        Me.lblName.TabIndex = 5
+        Me.lblName.Text = "Label8"
+        '
         'frmAdminPortal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -198,6 +224,7 @@ Partial Class frmAdminPortal
         Me.pnltop.ResumeLayout(False)
         Me.pnltop.PerformLayout()
         Me.Guna2Panel2.ResumeLayout(False)
+        Me.Guna2Panel2.PerformLayout()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
@@ -214,4 +241,6 @@ Partial Class frmAdminPortal
     Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents pnlMain As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2DragControl1 As Guna.UI2.WinForms.Guna2DragControl
+    Friend WithEvents Label2 As Label
+    Friend WithEvents lblName As Label
 End Class

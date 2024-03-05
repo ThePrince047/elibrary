@@ -16,10 +16,14 @@ Public Class frmlogin
                 Dim dr As OleDbDataReader
                 dr = cmd.ExecuteReader()
                 If dr.HasRows = True Then
+                    Dim username As String = txtUsernameLogin.Text
+
                     MessageBox.Show("Login Successful", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
                     txtPasswordLogin.Clear()
                     txtUsernameLogin.Clear()
                     rbAdmin.Checked = False
+                    Dim frmAdminPortal As New frmAdminPortal()
+                    frmAdminPortal.showDetail(username)
                     frmAdminPortal.Show()
                     Me.Hide()
                 Else

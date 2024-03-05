@@ -9,7 +9,7 @@ Public Class frmBooks
     End Sub
 
     Private Sub datagridshow()
-        Dim con As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\VB Projects\elibrary\bookseller.accdb")
+        Dim con As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\VB.net Projects\bookseller.accdb")
         con.Open()
         Dim da As New OleDbDataAdapter("SELECT * FROM bookTable", con)
         Dim dt As New DataTable
