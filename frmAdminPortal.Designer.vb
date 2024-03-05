@@ -27,16 +27,16 @@ Partial Class frmAdminPortal
         Me.pnltop = New Guna.UI2.WinForms.Guna2Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.NightControlBox1 = New ReaLTaiizor.Controls.NightControlBox()
-        Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
         Me.btnAccount = New Guna.UI2.WinForms.Guna2Button()
         Me.btnTest = New Guna.UI2.WinForms.Guna2Button()
         Me.pnlMain = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2DragControl1 = New Guna.UI2.WinForms.Guna2DragControl(Me.components)
+        Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.pnltop.SuspendLayout()
-        CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2Panel2.SuspendLayout()
+        CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Guna2Elipse1
@@ -91,18 +91,6 @@ Partial Class frmAdminPortal
         Me.NightControlBox1.Size = New System.Drawing.Size(139, 31)
         Me.NightControlBox1.TabIndex = 1
         '
-        'Guna2PictureBox2
-        '
-        Me.Guna2PictureBox2.Image = Global.elibrary.My.Resources.Resources.icons8_book
-        Me.Guna2PictureBox2.ImageRotate = 0!
-        Me.Guna2PictureBox2.Location = New System.Drawing.Point(3, 5)
-        Me.Guna2PictureBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
-        Me.Guna2PictureBox2.Size = New System.Drawing.Size(25, 20)
-        Me.Guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.Guna2PictureBox2.TabIndex = 4
-        Me.Guna2PictureBox2.TabStop = False
-        '
         'Guna2Panel2
         '
         Me.Guna2Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(161, Byte), Integer), CType(CType(94, Byte), Integer))
@@ -113,7 +101,7 @@ Partial Class frmAdminPortal
         Me.Guna2Panel2.Location = New System.Drawing.Point(0, 37)
         Me.Guna2Panel2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Guna2Panel2.Name = "Guna2Panel2"
-        Me.Guna2Panel2.Size = New System.Drawing.Size(224, 625)
+        Me.Guna2Panel2.Size = New System.Drawing.Size(224, 498)
         Me.Guna2Panel2.TabIndex = 3
         '
         'Guna2Button1
@@ -143,7 +131,7 @@ Partial Class frmAdminPortal
         Me.btnAccount.FillColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(54, Byte), Integer), CType(CType(24, Byte), Integer))
         Me.btnAccount.Font = New System.Drawing.Font("Jellee Bold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAccount.ForeColor = System.Drawing.Color.White
-        Me.btnAccount.Location = New System.Drawing.Point(19, 562)
+        Me.btnAccount.Location = New System.Drawing.Point(19, 430)
         Me.btnAccount.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnAccount.Name = "btnAccount"
         Me.btnAccount.Size = New System.Drawing.Size(181, 57)
@@ -169,11 +157,10 @@ Partial Class frmAdminPortal
         '
         'pnlMain
         '
-        Me.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pnlMain.Location = New System.Drawing.Point(224, 37)
         Me.pnlMain.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.pnlMain.Name = "pnlMain"
-        Me.pnlMain.Size = New System.Drawing.Size(880, 625)
+        Me.pnlMain.Size = New System.Drawing.Size(880, 480)
         Me.pnlMain.TabIndex = 4
         '
         'Guna2DragControl1
@@ -182,12 +169,24 @@ Partial Class frmAdminPortal
         Me.Guna2DragControl1.TargetControl = Me.pnltop
         Me.Guna2DragControl1.UseTransparentDrag = True
         '
+        'Guna2PictureBox2
+        '
+        Me.Guna2PictureBox2.Image = Global.elibrary.My.Resources.Resources.icons8_book
+        Me.Guna2PictureBox2.ImageRotate = 0!
+        Me.Guna2PictureBox2.Location = New System.Drawing.Point(3, 5)
+        Me.Guna2PictureBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
+        Me.Guna2PictureBox2.Size = New System.Drawing.Size(25, 20)
+        Me.Guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Guna2PictureBox2.TabIndex = 4
+        Me.Guna2PictureBox2.TabStop = False
+        '
         'frmAdminPortal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1104, 662)
+        Me.ClientSize = New System.Drawing.Size(1104, 535)
         Me.Controls.Add(Me.pnlMain)
         Me.Controls.Add(Me.Guna2Panel2)
         Me.Controls.Add(Me.pnltop)
@@ -198,8 +197,8 @@ Partial Class frmAdminPortal
         Me.Text = "frmAdminPortal"
         Me.pnltop.ResumeLayout(False)
         Me.pnltop.PerformLayout()
-        CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Guna2Panel2.ResumeLayout(False)
+        CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

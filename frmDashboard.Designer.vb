@@ -27,7 +27,7 @@ Partial Class frmDashboard
         Me.Label1 = New System.Windows.Forms.Label()
         Me.NightControlBox1 = New ReaLTaiizor.Controls.NightControlBox()
         Me.Guna2DragControl1 = New Guna.UI2.WinForms.Guna2DragControl(Me.components)
-        Me.btnAccount = New Guna.UI2.WinForms.Guna2Button()
+        Me.btnLogOut = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.pnlMain = New Guna.UI2.WinForms.Guna2Panel()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -49,6 +49,7 @@ Partial Class frmDashboard
         Me.Guna2PictureBox3 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
+        Me.lblName = New System.Windows.Forms.Label()
         Me.pnlTop.SuspendLayout()
         Me.Guna2Panel1.SuspendLayout()
         Me.pnlMain.SuspendLayout()
@@ -114,22 +115,22 @@ Partial Class frmDashboard
         Me.Guna2DragControl1.TargetControl = Me.pnlTop
         Me.Guna2DragControl1.UseTransparentDrag = True
         '
-        'btnAccount
+        'btnLogOut
         '
-        Me.btnAccount.BorderRadius = 10
-        Me.btnAccount.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.btnAccount.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.btnAccount.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.btnAccount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.btnAccount.FillColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(54, Byte), Integer), CType(CType(24, Byte), Integer))
-        Me.btnAccount.Font = New System.Drawing.Font("Jellee Bold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAccount.ForeColor = System.Drawing.Color.White
-        Me.btnAccount.Location = New System.Drawing.Point(19, 562)
-        Me.btnAccount.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btnAccount.Name = "btnAccount"
-        Me.btnAccount.Size = New System.Drawing.Size(181, 57)
-        Me.btnAccount.TabIndex = 0
-        Me.btnAccount.Text = "Log Out"
+        Me.btnLogOut.BorderRadius = 10
+        Me.btnLogOut.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btnLogOut.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btnLogOut.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnLogOut.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnLogOut.FillColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(54, Byte), Integer), CType(CType(24, Byte), Integer))
+        Me.btnLogOut.Font = New System.Drawing.Font("Jellee Bold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLogOut.ForeColor = System.Drawing.Color.White
+        Me.btnLogOut.Location = New System.Drawing.Point(19, 562)
+        Me.btnLogOut.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnLogOut.Name = "btnLogOut"
+        Me.btnLogOut.Size = New System.Drawing.Size(181, 57)
+        Me.btnLogOut.TabIndex = 0
+        Me.btnLogOut.Text = "Log Out"
         '
         'Guna2Panel1
         '
@@ -139,7 +140,7 @@ Partial Class frmDashboard
         Me.Guna2Panel1.Location = New System.Drawing.Point(0, 34)
         Me.Guna2Panel1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Guna2Panel1.Name = "Guna2Panel1"
-        Me.Guna2Panel1.Size = New System.Drawing.Size(1104, 628)
+        Me.Guna2Panel1.Size = New System.Drawing.Size(1104, 636)
         Me.Guna2Panel1.TabIndex = 3
         '
         'pnlMain
@@ -163,7 +164,7 @@ Partial Class frmDashboard
         Me.pnlMain.Location = New System.Drawing.Point(224, 0)
         Me.pnlMain.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.pnlMain.Name = "pnlMain"
-        Me.pnlMain.Size = New System.Drawing.Size(880, 628)
+        Me.pnlMain.Size = New System.Drawing.Size(880, 636)
         Me.pnlMain.TabIndex = 3
         '
         'Label7
@@ -314,14 +315,15 @@ Partial Class frmDashboard
         'Guna2Panel2
         '
         Me.Guna2Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(161, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.Guna2Panel2.Controls.Add(Me.lblName)
         Me.Guna2Panel2.Controls.Add(Me.Label3)
         Me.Guna2Panel2.Controls.Add(Me.Label2)
-        Me.Guna2Panel2.Controls.Add(Me.btnAccount)
+        Me.Guna2Panel2.Controls.Add(Me.btnLogOut)
         Me.Guna2Panel2.Dock = System.Windows.Forms.DockStyle.Left
         Me.Guna2Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Guna2Panel2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Guna2Panel2.Name = "Guna2Panel2"
-        Me.Guna2Panel2.Size = New System.Drawing.Size(224, 628)
+        Me.Guna2Panel2.Size = New System.Drawing.Size(224, 636)
         Me.Guna2Panel2.TabIndex = 2
         '
         'Label3
@@ -342,9 +344,9 @@ Partial Class frmDashboard
         Me.Label2.ForeColor = System.Drawing.Color.White
         Me.Label2.Location = New System.Drawing.Point(9, 20)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(181, 44)
+        Me.Label2.Size = New System.Drawing.Size(105, 22)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Welcome To " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Palace Of Readers." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Label2.Text = "Welcome ,"
         '
         'Guna2PictureBox5
         '
@@ -390,7 +392,7 @@ Partial Class frmDashboard
         Me.Guna2PictureBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
         Me.Guna2PictureBox1.Size = New System.Drawing.Size(200, 199)
-        Me.Guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.Guna2PictureBox1.TabIndex = 14
         Me.Guna2PictureBox1.TabStop = False
         '
@@ -406,12 +408,23 @@ Partial Class frmDashboard
         Me.Guna2PictureBox2.TabIndex = 3
         Me.Guna2PictureBox2.TabStop = False
         '
+        'lblName
+        '
+        Me.lblName.AutoSize = True
+        Me.lblName.Font = New System.Drawing.Font("Jellee Bold", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblName.ForeColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.lblName.Location = New System.Drawing.Point(7, 42)
+        Me.lblName.Name = "lblName"
+        Me.lblName.Size = New System.Drawing.Size(110, 34)
+        Me.lblName.TabIndex = 3
+        Me.lblName.Text = "Label8"
+        '
         'frmDashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1104, 662)
+        Me.ClientSize = New System.Drawing.Size(1104, 670)
         Me.Controls.Add(Me.Guna2Panel1)
         Me.Controls.Add(Me.pnlTop)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -439,7 +452,7 @@ Partial Class frmDashboard
     Friend WithEvents NightControlBox1 As ReaLTaiizor.Controls.NightControlBox
     Friend WithEvents Guna2DragControl1 As Guna.UI2.WinForms.Guna2DragControl
     Friend WithEvents Guna2PictureBox2 As Guna.UI2.WinForms.Guna2PictureBox
-    Friend WithEvents btnAccount As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btnLogOut As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents pnlMain As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
@@ -460,4 +473,5 @@ Partial Class frmDashboard
     Friend WithEvents btnBook2 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents btnBook1 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2PictureBox5 As Guna.UI2.WinForms.Guna2PictureBox
+    Friend WithEvents lblName As Label
 End Class

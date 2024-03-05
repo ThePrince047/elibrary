@@ -30,10 +30,14 @@ Public Class frmlogin
                 Dim dr As OleDbDataReader
                 dr = cmd.ExecuteReader()
                 If dr.HasRows = True Then
+                    Dim username As String = txtUsernameLogin.Text
+
                     MessageBox.Show("Login Successful", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
                     txtPasswordLogin.Clear()
                     txtUsernameLogin.Clear()
                     rbUser.Checked = False
+                    Dim frmDashboard As New frmDashboard()
+                    frmDashboard.showDetail(username)
                     frmDashboard.Show()
                     Me.Hide()
                 Else
@@ -47,7 +51,7 @@ Public Class frmlogin
     End Sub
 
     Private Sub signuptxt_Click(sender As Object, e As EventArgs) Handles signuptxt.Click
-        frmSignup.Show()
+        frmsignup.Show()
         Me.Hide()
     End Sub
 

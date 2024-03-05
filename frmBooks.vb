@@ -3,6 +3,8 @@ Imports System.Data
 
 Public Class frmBooks
     Private Sub frmBooks_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'CurrentDB.bookTable' table. You can move, or remove it, as needed.
+        Me.BookTableTableAdapter1.Fill(Me.CurrentDB.bookTable)
         datagridshow()
     End Sub
 

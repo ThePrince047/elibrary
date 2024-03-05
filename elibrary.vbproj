@@ -112,6 +112,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>booksellerDataSet11.xsd</DependentUpon>
     </Compile>
+    <Compile Include="currentDB.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>currentDB.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -224,6 +229,17 @@
     <None Include="booksellerDataSet11.xss">
       <DependentUpon>booksellerDataSet11.xsd</DependentUpon>
     </None>
+    <None Include="currentDB.xsc">
+      <DependentUpon>currentDB.xsd</DependentUpon>
+    </None>
+    <None Include="currentDB.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>currentDB.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="currentDB.xss">
+      <DependentUpon>currentDB.xsd</DependentUpon>
+    </None>
     <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
@@ -256,9 +272,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="bookseller.accdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <None Include="Resources\TheShadowGirl.jpg" />
     <None Include="Resources\PDF-EPUB-How-to-Become-a-People-Magnet-by-Marc-Reklau-Download.jpg" />
     <None Include="Resources\mdem7_512.png" />
@@ -266,6 +279,11 @@
     <None Include="Resources\book.gif" />
     <None Include="Resources\booksplash.gif" />
     <None Include="Resources\book-stack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bookseller.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

@@ -5,6 +5,8 @@ Imports Microsoft.VisualBasic.ApplicationServices
 
 Public Class frmUsers
     Private Sub frmUsers_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'CurrentDB.userTable' table. You can move, or remove it, as needed.
+        Me.UserTableTableAdapter1.Fill(Me.CurrentDB.userTable)
         datagridshow()
     End Sub
 

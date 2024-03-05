@@ -37,10 +37,15 @@ Partial Class frmUsers
         Me.BookTableBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.BookTableTableAdapter = New elibrary.booksellerDataSet1TableAdapters.bookTableTableAdapter()
         Me.UserTableTableAdapter = New elibrary.booksellerDataSet1TableAdapters.userTableTableAdapter()
+        Me.CurrentDB = New elibrary.currentDB()
+        Me.UserTableBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.UserTableTableAdapter1 = New elibrary.currentDBTableAdapters.userTableTableAdapter()
         CType(Me.dgUser, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.UserTableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BooksellerDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BookTableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CurrentDB, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.UserTableBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'dgUser
@@ -61,7 +66,7 @@ Partial Class frmUsers
         Me.dgUser.ColumnHeadersHeight = 18
         Me.dgUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
         Me.dgUser.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.UserIDDataGridViewTextBoxColumn, Me.UsernameDataGridViewTextBoxColumn, Me.EmailDataGridViewTextBoxColumn, Me.PasswordDataGridViewTextBoxColumn, Me.IsAdminDataGridViewTextBoxColumn})
-        Me.dgUser.DataSource = Me.UserTableBindingSource
+        Me.dgUser.DataSource = Me.UserTableBindingSource1
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
         DataGridViewCellStyle3.Font = New System.Drawing.Font("Jellee Bold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -77,7 +82,7 @@ Partial Class frmUsers
         Me.dgUser.RowHeadersVisible = False
         Me.dgUser.RowHeadersWidth = 51
         Me.dgUser.RowTemplate.Height = 24
-        Me.dgUser.Size = New System.Drawing.Size(880, 630)
+        Me.dgUser.Size = New System.Drawing.Size(880, 530)
         Me.dgUser.TabIndex = 0
         Me.dgUser.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
         Me.dgUser.ThemeStyle.AlternatingRowsStyle.Font = Nothing
@@ -159,11 +164,25 @@ Partial Class frmUsers
         '
         Me.UserTableTableAdapter.ClearBeforeFill = True
         '
+        'CurrentDB
+        '
+        Me.CurrentDB.DataSetName = "currentDB"
+        Me.CurrentDB.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'UserTableBindingSource1
+        '
+        Me.UserTableBindingSource1.DataMember = "userTable"
+        Me.UserTableBindingSource1.DataSource = Me.CurrentDB
+        '
+        'UserTableTableAdapter1
+        '
+        Me.UserTableTableAdapter1.ClearBeforeFill = True
+        '
         'frmUsers
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(880, 630)
+        Me.ClientSize = New System.Drawing.Size(880, 530)
         Me.Controls.Add(Me.dgUser)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "frmUsers"
@@ -172,6 +191,8 @@ Partial Class frmUsers
         CType(Me.UserTableBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BooksellerDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BookTableBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CurrentDB, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.UserTableBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -187,4 +208,7 @@ Partial Class frmUsers
     Friend WithEvents EmailDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents PasswordDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents IsAdminDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents CurrentDB As currentDB
+    Friend WithEvents UserTableBindingSource1 As BindingSource
+    Friend WithEvents UserTableTableAdapter1 As currentDBTableAdapters.userTableTableAdapter
 End Class

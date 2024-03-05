@@ -1,8 +1,16 @@
 ﻿Imports System.Diagnostics
 Public Class frmDashboard
-    Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles btnAccount.Click
-        frmlogin.Show()
-        Me.Hide()
+
+    Public Sub showDetail(username As String)
+        lblName.Text = username
+    End Sub
+    Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles btnLogOut.Click
+        MsgBox("Do You Want To Log Out ?", vbYesNo, vbInformation)
+        If vbYes Then
+            MsgBox("You Have Been Logged Out", vbInformation)
+            frmlogin.Show()
+            Me.Hide()
+        End If
     End Sub
     Sub childform(ByVal panel As Form)
         pnlMain.Controls.Clear()
@@ -39,10 +47,4 @@ Public Class frmDashboard
 
 
 
-
-
-    'Private Sub Guna2Button1_Click_1(sender As Object, e As EventArgs)
-    '    Dim path As String = "D:\SYBCA\BCASEM4_REG_MAR2024.pdf"
-    '    System.Diagnostics.Process.Start(path)
-    'End Sub
 End Class

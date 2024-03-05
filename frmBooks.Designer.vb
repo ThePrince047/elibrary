@@ -36,10 +36,15 @@ Partial Class frmBooks
         Me.BooksellerDataSetBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.BooksellerDataSet = New elibrary.booksellerDataSet()
         Me.BookTableTableAdapter = New elibrary.booksellerDataSetTableAdapters.bookTableTableAdapter()
+        Me.CurrentDB = New elibrary.currentDB()
+        Me.BookTableBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.BookTableTableAdapter1 = New elibrary.currentDBTableAdapters.bookTableTableAdapter()
         CType(Me.dgBooks, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BookTableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BooksellerDataSetBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BooksellerDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CurrentDB, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BookTableBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'dgBooks
@@ -60,7 +65,7 @@ Partial Class frmBooks
         Me.dgBooks.ColumnHeadersHeight = 18
         Me.dgBooks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
         Me.dgBooks.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.BookIDDataGridViewTextBoxColumn, Me.BookNameDataGridViewTextBoxColumn, Me.AuthorNameDataGridViewTextBoxColumn, Me.GenreDataGridViewTextBoxColumn})
-        Me.dgBooks.DataSource = Me.BookTableBindingSource
+        Me.dgBooks.DataSource = Me.BookTableBindingSource1
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
         DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -150,6 +155,20 @@ Partial Class frmBooks
         '
         Me.BookTableTableAdapter.ClearBeforeFill = True
         '
+        'CurrentDB
+        '
+        Me.CurrentDB.DataSetName = "currentDB"
+        Me.CurrentDB.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'BookTableBindingSource1
+        '
+        Me.BookTableBindingSource1.DataMember = "bookTable"
+        Me.BookTableBindingSource1.DataSource = Me.CurrentDB
+        '
+        'BookTableTableAdapter1
+        '
+        Me.BookTableTableAdapter1.ClearBeforeFill = True
+        '
         'frmBooks
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -163,6 +182,8 @@ Partial Class frmBooks
         CType(Me.BookTableBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BooksellerDataSetBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BooksellerDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CurrentDB, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BookTableBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -176,4 +197,7 @@ Partial Class frmBooks
     Friend WithEvents BookNameDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents AuthorNameDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents GenreDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents CurrentDB As currentDB
+    Friend WithEvents BookTableBindingSource1 As BindingSource
+    Friend WithEvents BookTableTableAdapter1 As currentDBTableAdapters.bookTableTableAdapter
 End Class
