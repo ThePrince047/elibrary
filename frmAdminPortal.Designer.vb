@@ -53,7 +53,7 @@ Partial Class frmAdminPortal
         Me.pnltop.Location = New System.Drawing.Point(0, 0)
         Me.pnltop.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.pnltop.Name = "pnltop"
-        Me.pnltop.Size = New System.Drawing.Size(1104, 32)
+        Me.pnltop.Size = New System.Drawing.Size(1104, 37)
         Me.pnltop.TabIndex = 0
         '
         'Label1
@@ -61,7 +61,7 @@ Partial Class frmAdminPortal
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Jellee Bold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(34, 6)
+        Me.Label1.Location = New System.Drawing.Point(35, 6)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(143, 24)
         Me.Label1.TabIndex = 4
@@ -82,7 +82,7 @@ Partial Class frmAdminPortal
         Me.NightControlBox1.EnableMaximizeColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.NightControlBox1.EnableMinimizeButton = True
         Me.NightControlBox1.EnableMinimizeColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.NightControlBox1.Location = New System.Drawing.Point(965, 0)
+        Me.NightControlBox1.Location = New System.Drawing.Point(961, 4)
         Me.NightControlBox1.MaximizeHoverColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.NightControlBox1.MaximizeHoverForeColor = System.Drawing.Color.White
         Me.NightControlBox1.MinimizeHoverColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
@@ -110,10 +110,10 @@ Partial Class frmAdminPortal
         Me.Guna2Panel2.Controls.Add(Me.btnAccount)
         Me.Guna2Panel2.Controls.Add(Me.btnTest)
         Me.Guna2Panel2.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Guna2Panel2.Location = New System.Drawing.Point(0, 32)
+        Me.Guna2Panel2.Location = New System.Drawing.Point(0, 37)
         Me.Guna2Panel2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Guna2Panel2.Name = "Guna2Panel2"
-        Me.Guna2Panel2.Size = New System.Drawing.Size(224, 630)
+        Me.Guna2Panel2.Size = New System.Drawing.Size(224, 625)
         Me.Guna2Panel2.TabIndex = 3
         '
         'Guna2Button1
@@ -126,10 +126,10 @@ Partial Class frmAdminPortal
         Me.Guna2Button1.FillColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(54, Byte), Integer), CType(CType(24, Byte), Integer))
         Me.Guna2Button1.Font = New System.Drawing.Font("Jellee Bold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2Button1.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button1.Location = New System.Drawing.Point(18, 103)
+        Me.Guna2Button1.Location = New System.Drawing.Point(19, 103)
         Me.Guna2Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Guna2Button1.Name = "Guna2Button1"
-        Me.Guna2Button1.Size = New System.Drawing.Size(181, 56)
+        Me.Guna2Button1.Size = New System.Drawing.Size(181, 57)
         Me.Guna2Button1.TabIndex = 4
         Me.Guna2Button1.Text = "Books"
         '
@@ -143,10 +143,10 @@ Partial Class frmAdminPortal
         Me.btnAccount.FillColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(54, Byte), Integer), CType(CType(24, Byte), Integer))
         Me.btnAccount.Font = New System.Drawing.Font("Jellee Bold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAccount.ForeColor = System.Drawing.Color.White
-        Me.btnAccount.Location = New System.Drawing.Point(18, 563)
+        Me.btnAccount.Location = New System.Drawing.Point(19, 562)
         Me.btnAccount.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnAccount.Name = "btnAccount"
-        Me.btnAccount.Size = New System.Drawing.Size(181, 56)
+        Me.btnAccount.Size = New System.Drawing.Size(181, 57)
         Me.btnAccount.TabIndex = 0
         Me.btnAccount.Text = "Log Out"
         '
@@ -160,20 +160,20 @@ Partial Class frmAdminPortal
         Me.btnTest.FillColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(54, Byte), Integer), CType(CType(24, Byte), Integer))
         Me.btnTest.Font = New System.Drawing.Font("Jellee Bold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnTest.ForeColor = System.Drawing.Color.White
-        Me.btnTest.Location = New System.Drawing.Point(18, 22)
+        Me.btnTest.Location = New System.Drawing.Point(19, 22)
         Me.btnTest.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnTest.Name = "btnTest"
-        Me.btnTest.Size = New System.Drawing.Size(181, 56)
+        Me.btnTest.Size = New System.Drawing.Size(181, 57)
         Me.btnTest.TabIndex = 1
         Me.btnTest.Text = "Users"
         '
         'pnlMain
         '
         Me.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.pnlMain.Location = New System.Drawing.Point(224, 32)
+        Me.pnlMain.Location = New System.Drawing.Point(224, 37)
         Me.pnlMain.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.pnlMain.Name = "pnlMain"
-        Me.pnlMain.Size = New System.Drawing.Size(880, 630)
+        Me.pnlMain.Size = New System.Drawing.Size(880, 625)
         Me.pnlMain.TabIndex = 4
         '
         'Guna2DragControl1

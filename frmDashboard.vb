@@ -27,6 +27,18 @@ Public Class frmDashboard
         Process.Start(path)
     End Sub
 
+    Private Sub btnBook3_Click(sender As Object, e As EventArgs) Handles btnBook3.Click
+        Dim path As String = "D:\SYBCA\people magnet.pdf"
+        Process.Start(path)
+    End Sub
+
+    Private Sub btnBook4_Click(sender As Object, e As EventArgs) Handles btnBook4.Click
+        Dim path As String = "D:\SYBCA\_OceanofPDF.com_The_Shadow_Girl_-_Ray_Cummings.pdf"
+        Process.Start(path)
+    End Sub
+
+
+
 
 
     'Private Sub Guna2Button1_Click_1(sender As Object, e As EventArgs)

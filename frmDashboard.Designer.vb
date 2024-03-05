@@ -70,7 +70,7 @@ Partial Class frmDashboard
         Me.pnlTop.Location = New System.Drawing.Point(0, 0)
         Me.pnlTop.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.pnlTop.Name = "pnlTop"
-        Me.pnlTop.Size = New System.Drawing.Size(1104, 35)
+        Me.pnlTop.Size = New System.Drawing.Size(1104, 34)
         Me.pnlTop.TabIndex = 1
         '
         'Label1
@@ -78,7 +78,7 @@ Partial Class frmDashboard
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Jellee Bold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(34, 6)
+        Me.Label1.Location = New System.Drawing.Point(35, 6)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(165, 24)
         Me.Label1.TabIndex = 2
@@ -124,10 +124,10 @@ Partial Class frmDashboard
         Me.btnAccount.FillColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(54, Byte), Integer), CType(CType(24, Byte), Integer))
         Me.btnAccount.Font = New System.Drawing.Font("Jellee Bold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAccount.ForeColor = System.Drawing.Color.White
-        Me.btnAccount.Location = New System.Drawing.Point(18, 563)
+        Me.btnAccount.Location = New System.Drawing.Point(19, 562)
         Me.btnAccount.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnAccount.Name = "btnAccount"
-        Me.btnAccount.Size = New System.Drawing.Size(181, 56)
+        Me.btnAccount.Size = New System.Drawing.Size(181, 57)
         Me.btnAccount.TabIndex = 0
         Me.btnAccount.Text = "Log Out"
         '
@@ -136,10 +136,10 @@ Partial Class frmDashboard
         Me.Guna2Panel1.Controls.Add(Me.pnlMain)
         Me.Guna2Panel1.Controls.Add(Me.Guna2Panel2)
         Me.Guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2Panel1.Location = New System.Drawing.Point(0, 35)
+        Me.Guna2Panel1.Location = New System.Drawing.Point(0, 34)
         Me.Guna2Panel1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Guna2Panel1.Name = "Guna2Panel1"
-        Me.Guna2Panel1.Size = New System.Drawing.Size(1104, 627)
+        Me.Guna2Panel1.Size = New System.Drawing.Size(1104, 628)
         Me.Guna2Panel1.TabIndex = 3
         '
         'pnlMain
@@ -163,32 +163,34 @@ Partial Class frmDashboard
         Me.pnlMain.Location = New System.Drawing.Point(224, 0)
         Me.pnlMain.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.pnlMain.Name = "pnlMain"
-        Me.pnlMain.Size = New System.Drawing.Size(880, 627)
+        Me.pnlMain.Size = New System.Drawing.Size(880, 628)
         Me.pnlMain.TabIndex = 3
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(652, 555)
+        Me.Label7.Font = New System.Drawing.Font("Jellee Bold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(606, 555)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(48, 16)
+        Me.Label7.Size = New System.Drawing.Size(132, 18)
         Me.Label7.TabIndex = 13
-        Me.Label7.Text = "Label7"
+        Me.Label7.Text = "The Shadow Girl"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(192, 554)
+        Me.Label6.Font = New System.Drawing.Font("Jellee Bold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(102, 555)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(48, 16)
+        Me.Label6.Size = New System.Drawing.Size(247, 18)
         Me.Label6.TabIndex = 12
-        Me.Label6.Text = "Label6"
+        Me.Label6.Text = "How To Become People Magnet"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Jellee Bold", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(546, 233)
+        Me.Label5.Location = New System.Drawing.Point(530, 233)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(272, 16)
         Me.Label5.TabIndex = 11
@@ -199,7 +201,7 @@ Partial Class frmDashboard
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Jellee Bold", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(54, Byte), Integer), CType(CType(24, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(147, 233)
+        Me.Label4.Location = New System.Drawing.Point(141, 233)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(141, 16)
         Me.Label4.TabIndex = 10
@@ -216,8 +218,9 @@ Partial Class frmDashboard
         Me.btnBook4.Font = New System.Drawing.Font("Jellee Bold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBook4.ForeColor = System.Drawing.Color.White
         Me.btnBook4.Location = New System.Drawing.Point(584, 582)
+        Me.btnBook4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnBook4.Name = "btnBook4"
-        Me.btnBook4.Size = New System.Drawing.Size(180, 45)
+        Me.btnBook4.Size = New System.Drawing.Size(180, 46)
         Me.btnBook4.TabIndex = 9
         Me.btnBook4.Text = "Click Here To Read"
         '
@@ -231,9 +234,10 @@ Partial Class frmDashboard
         Me.btnBook3.FillColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(54, Byte), Integer), CType(CType(24, Byte), Integer))
         Me.btnBook3.Font = New System.Drawing.Font("Jellee Bold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBook3.ForeColor = System.Drawing.Color.White
-        Me.btnBook3.Location = New System.Drawing.Point(126, 582)
+        Me.btnBook3.Location = New System.Drawing.Point(125, 582)
+        Me.btnBook3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnBook3.Name = "btnBook3"
-        Me.btnBook3.Size = New System.Drawing.Size(180, 45)
+        Me.btnBook3.Size = New System.Drawing.Size(180, 46)
         Me.btnBook3.TabIndex = 8
         Me.btnBook3.Text = "Click Here To Read"
         '
@@ -248,8 +252,9 @@ Partial Class frmDashboard
         Me.btnBook2.Font = New System.Drawing.Font("Jellee Bold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBook2.ForeColor = System.Drawing.Color.White
         Me.btnBook2.Location = New System.Drawing.Point(584, 263)
+        Me.btnBook2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnBook2.Name = "btnBook2"
-        Me.btnBook2.Size = New System.Drawing.Size(180, 45)
+        Me.btnBook2.Size = New System.Drawing.Size(180, 46)
         Me.btnBook2.TabIndex = 7
         Me.btnBook2.Text = "Click Here To Read"
         '
@@ -263,9 +268,10 @@ Partial Class frmDashboard
         Me.btnBook1.FillColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(54, Byte), Integer), CType(CType(24, Byte), Integer))
         Me.btnBook1.Font = New System.Drawing.Font("Jellee Bold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBook1.ForeColor = System.Drawing.Color.White
-        Me.btnBook1.Location = New System.Drawing.Point(126, 263)
+        Me.btnBook1.Location = New System.Drawing.Point(125, 263)
+        Me.btnBook1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnBook1.Name = "btnBook1"
-        Me.btnBook1.Size = New System.Drawing.Size(180, 45)
+        Me.btnBook1.Size = New System.Drawing.Size(180, 46)
         Me.btnBook1.TabIndex = 6
         Me.btnBook1.Text = "Click Here To Read"
         '
@@ -274,9 +280,10 @@ Partial Class frmDashboard
         Me.LostSeparator3.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.LostSeparator3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.LostSeparator3.Horizontal = False
-        Me.LostSeparator3.Location = New System.Drawing.Point(448, -3)
+        Me.LostSeparator3.Location = New System.Drawing.Point(448, -2)
+        Me.LostSeparator3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.LostSeparator3.Name = "LostSeparator3"
-        Me.LostSeparator3.Size = New System.Drawing.Size(2, 630)
+        Me.LostSeparator3.Size = New System.Drawing.Size(3, 630)
         Me.LostSeparator3.TabIndex = 5
         Me.LostSeparator3.Text = "LostSeparator3"
         '
@@ -285,7 +292,8 @@ Partial Class frmDashboard
         Me.LostSeparator2.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.LostSeparator2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.LostSeparator2.Horizontal = False
-        Me.LostSeparator2.Location = New System.Drawing.Point(6, 322)
+        Me.LostSeparator2.Location = New System.Drawing.Point(5, 322)
+        Me.LostSeparator2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.LostSeparator2.Name = "LostSeparator2"
         Me.LostSeparator2.Size = New System.Drawing.Size(880, 2)
         Me.LostSeparator2.TabIndex = 4
@@ -297,6 +305,7 @@ Partial Class frmDashboard
         Me.LostSeparator1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.LostSeparator1.Horizontal = False
         Me.LostSeparator1.Location = New System.Drawing.Point(0, 314)
+        Me.LostSeparator1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.LostSeparator1.Name = "LostSeparator1"
         Me.LostSeparator1.Size = New System.Drawing.Size(880, 2)
         Me.LostSeparator1.TabIndex = 3
@@ -312,7 +321,7 @@ Partial Class frmDashboard
         Me.Guna2Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Guna2Panel2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Guna2Panel2.Name = "Guna2Panel2"
-        Me.Guna2Panel2.Size = New System.Drawing.Size(224, 627)
+        Me.Guna2Panel2.Size = New System.Drawing.Size(224, 628)
         Me.Guna2Panel2.TabIndex = 2
         '
         'Label3
@@ -320,38 +329,44 @@ Partial Class frmDashboard
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Jellee Bold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(-1, 73)
+        Me.Label3.Location = New System.Drawing.Point(9, 114)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(226, 105)
+        Me.Label3.Size = New System.Drawing.Size(179, 105)
         Me.Label3.TabIndex = 2
-        Me.Label3.Text = "Find Your Suitable Books " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Here And Gain More" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Knowldedge..." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Label3.Text = "Find Your Books " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Here And Gain More" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Knowldedge..." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Jellee Bold", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(3, 33)
+        Me.Label2.Location = New System.Drawing.Point(9, 20)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(211, 22)
+        Me.Label2.Size = New System.Drawing.Size(181, 44)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Welcome To E-Library"
+        Me.Label2.Text = "Welcome To " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Palace Of Readers." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'Guna2PictureBox5
         '
+        Me.Guna2PictureBox5.Image = Global.elibrary.My.Resources.Resources.TheShadowGirl
         Me.Guna2PictureBox5.ImageRotate = 0!
-        Me.Guna2PictureBox5.Location = New System.Drawing.Point(574, 339)
+        Me.Guna2PictureBox5.Location = New System.Drawing.Point(573, 338)
+        Me.Guna2PictureBox5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Guna2PictureBox5.Name = "Guna2PictureBox5"
-        Me.Guna2PictureBox5.Size = New System.Drawing.Size(200, 200)
+        Me.Guna2PictureBox5.Size = New System.Drawing.Size(200, 199)
+        Me.Guna2PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.Guna2PictureBox5.TabIndex = 17
         Me.Guna2PictureBox5.TabStop = False
         '
         'Guna2PictureBox4
         '
+        Me.Guna2PictureBox4.Image = Global.elibrary.My.Resources.Resources.PDF_EPUB_How_to_Become_a_People_Magnet_by_Marc_Reklau_Download
         Me.Guna2PictureBox4.ImageRotate = 0!
-        Me.Guna2PictureBox4.Location = New System.Drawing.Point(117, 339)
+        Me.Guna2PictureBox4.Location = New System.Drawing.Point(117, 338)
+        Me.Guna2PictureBox4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Guna2PictureBox4.Name = "Guna2PictureBox4"
-        Me.Guna2PictureBox4.Size = New System.Drawing.Size(200, 200)
+        Me.Guna2PictureBox4.Size = New System.Drawing.Size(200, 199)
+        Me.Guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.Guna2PictureBox4.TabIndex = 16
         Me.Guna2PictureBox4.TabStop = False
         '
@@ -359,9 +374,10 @@ Partial Class frmDashboard
         '
         Me.Guna2PictureBox3.Image = Global.elibrary.My.Resources.Resources.download
         Me.Guna2PictureBox3.ImageRotate = 0!
-        Me.Guna2PictureBox3.Location = New System.Drawing.Point(574, 20)
+        Me.Guna2PictureBox3.Location = New System.Drawing.Point(573, 20)
+        Me.Guna2PictureBox3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Guna2PictureBox3.Name = "Guna2PictureBox3"
-        Me.Guna2PictureBox3.Size = New System.Drawing.Size(200, 200)
+        Me.Guna2PictureBox3.Size = New System.Drawing.Size(200, 199)
         Me.Guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.Guna2PictureBox3.TabIndex = 15
         Me.Guna2PictureBox3.TabStop = False
@@ -371,8 +387,9 @@ Partial Class frmDashboard
         Me.Guna2PictureBox1.Image = Global.elibrary.My.Resources.Resources.mdem7_512
         Me.Guna2PictureBox1.ImageRotate = 0!
         Me.Guna2PictureBox1.Location = New System.Drawing.Point(117, 20)
+        Me.Guna2PictureBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
-        Me.Guna2PictureBox1.Size = New System.Drawing.Size(200, 200)
+        Me.Guna2PictureBox1.Size = New System.Drawing.Size(200, 199)
         Me.Guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Guna2PictureBox1.TabIndex = 14
         Me.Guna2PictureBox1.TabStop = False
