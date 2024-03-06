@@ -59,5 +59,11 @@ Public Class frmlogin
         Me.Hide()
     End Sub
 
-
+    Private Sub cbShowPass_CheckedChanged(sender As Object, e As EventArgs) Handles cbShowPass.CheckedChanged
+        If cbShowPass.Checked Then
+            txtPasswordLogin.PasswordChar = ""
+        Else
+            txtPasswordLogin.PasswordChar = "*"
+        End If
+    End Sub
 End Class

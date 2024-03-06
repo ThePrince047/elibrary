@@ -1,5 +1,7 @@
-﻿Public Class frmAdminPortal
+﻿Imports System.Data.OleDb
+Imports System.Data
 
+Public Class frmAdminPortal
     Public Sub showDetail(username As String)
         lblName.Text = username
     End Sub
@@ -36,4 +38,6 @@
     Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
         childform(frmBooks)
     End Sub
+
+
 End Class

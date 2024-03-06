@@ -27,18 +27,18 @@ Partial Class frmAdminPortal
         Me.pnltop = New Guna.UI2.WinForms.Guna2Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.NightControlBox1 = New ReaLTaiizor.Controls.NightControlBox()
+        Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.lblName = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
         Me.btnAccount = New Guna.UI2.WinForms.Guna2Button()
         Me.btnTest = New Guna.UI2.WinForms.Guna2Button()
         Me.pnlMain = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2DragControl1 = New Guna.UI2.WinForms.Guna2DragControl(Me.components)
-        Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.lblName = New System.Windows.Forms.Label()
         Me.pnltop.SuspendLayout()
-        Me.Guna2Panel2.SuspendLayout()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Guna2Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Guna2Elipse1
@@ -84,7 +84,7 @@ Partial Class frmAdminPortal
         Me.NightControlBox1.EnableMaximizeColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.NightControlBox1.EnableMinimizeButton = True
         Me.NightControlBox1.EnableMinimizeColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.NightControlBox1.Location = New System.Drawing.Point(961, 4)
+        Me.NightControlBox1.Location = New System.Drawing.Point(965, 0)
         Me.NightControlBox1.MaximizeHoverColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.NightControlBox1.MaximizeHoverForeColor = System.Drawing.Color.White
         Me.NightControlBox1.MinimizeHoverColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
@@ -92,6 +92,18 @@ Partial Class frmAdminPortal
         Me.NightControlBox1.Name = "NightControlBox1"
         Me.NightControlBox1.Size = New System.Drawing.Size(139, 31)
         Me.NightControlBox1.TabIndex = 1
+        '
+        'Guna2PictureBox2
+        '
+        Me.Guna2PictureBox2.Image = Global.elibrary.My.Resources.Resources.icons8_book
+        Me.Guna2PictureBox2.ImageRotate = 0!
+        Me.Guna2PictureBox2.Location = New System.Drawing.Point(3, 5)
+        Me.Guna2PictureBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
+        Me.Guna2PictureBox2.Size = New System.Drawing.Size(25, 20)
+        Me.Guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Guna2PictureBox2.TabIndex = 4
+        Me.Guna2PictureBox2.TabStop = False
         '
         'Guna2Panel2
         '
@@ -107,6 +119,28 @@ Partial Class frmAdminPortal
         Me.Guna2Panel2.Name = "Guna2Panel2"
         Me.Guna2Panel2.Size = New System.Drawing.Size(224, 498)
         Me.Guna2Panel2.TabIndex = 3
+        '
+        'lblName
+        '
+        Me.lblName.AutoSize = True
+        Me.lblName.Font = New System.Drawing.Font("Jellee Bold", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblName.ForeColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.lblName.Location = New System.Drawing.Point(24, 36)
+        Me.lblName.Name = "lblName"
+        Me.lblName.Size = New System.Drawing.Size(110, 34)
+        Me.lblName.TabIndex = 5
+        Me.lblName.Text = "Label8"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Jellee Bold", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(26, 14)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(105, 22)
+        Me.Label2.TabIndex = 2
+        Me.Label2.Text = "Welcome ,"
         '
         'Guna2Button1
         '
@@ -164,7 +198,7 @@ Partial Class frmAdminPortal
         Me.pnlMain.Location = New System.Drawing.Point(224, 37)
         Me.pnlMain.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.pnlMain.Name = "pnlMain"
-        Me.pnlMain.Size = New System.Drawing.Size(880, 480)
+        Me.pnlMain.Size = New System.Drawing.Size(880, 498)
         Me.pnlMain.TabIndex = 4
         '
         'Guna2DragControl1
@@ -172,40 +206,6 @@ Partial Class frmAdminPortal
         Me.Guna2DragControl1.DockIndicatorTransparencyValue = 0.6R
         Me.Guna2DragControl1.TargetControl = Me.pnltop
         Me.Guna2DragControl1.UseTransparentDrag = True
-        '
-        'Guna2PictureBox2
-        '
-        Me.Guna2PictureBox2.Image = Global.elibrary.My.Resources.Resources.icons8_book
-        Me.Guna2PictureBox2.ImageRotate = 0!
-        Me.Guna2PictureBox2.Location = New System.Drawing.Point(3, 5)
-        Me.Guna2PictureBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
-        Me.Guna2PictureBox2.Size = New System.Drawing.Size(25, 20)
-        Me.Guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.Guna2PictureBox2.TabIndex = 4
-        Me.Guna2PictureBox2.TabStop = False
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Jellee Bold", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(26, 14)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(105, 22)
-        Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Welcome ,"
-        '
-        'lblName
-        '
-        Me.lblName.AutoSize = True
-        Me.lblName.Font = New System.Drawing.Font("Jellee Bold", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblName.ForeColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.lblName.Location = New System.Drawing.Point(24, 36)
-        Me.lblName.Name = "lblName"
-        Me.lblName.Size = New System.Drawing.Size(110, 34)
-        Me.lblName.TabIndex = 5
-        Me.lblName.Text = "Label8"
         '
         'frmAdminPortal
         '
@@ -223,9 +223,9 @@ Partial Class frmAdminPortal
         Me.Text = "frmAdminPortal"
         Me.pnltop.ResumeLayout(False)
         Me.pnltop.PerformLayout()
+        CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Guna2Panel2.ResumeLayout(False)
         Me.Guna2Panel2.PerformLayout()
-        CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

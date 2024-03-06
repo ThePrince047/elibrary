@@ -38,6 +38,7 @@ Partial Class frmlogin
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Guna2Elipse1 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
         Me.NightControlBox1 = New ReaLTaiizor.Controls.NightControlBox()
+        Me.cbShowPass = New Guna.UI2.WinForms.Guna2CheckBox()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -287,13 +288,33 @@ Partial Class frmlogin
         Me.NightControlBox1.Size = New System.Drawing.Size(139, 31)
         Me.NightControlBox1.TabIndex = 17
         '
-        'frmLogin
+        'cbShowPass
+        '
+        Me.cbShowPass.AutoSize = True
+        Me.cbShowPass.BackColor = System.Drawing.Color.White
+        Me.cbShowPass.CheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.cbShowPass.CheckedState.BorderRadius = 0
+        Me.cbShowPass.CheckedState.BorderThickness = 0
+        Me.cbShowPass.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.cbShowPass.ForeColor = System.Drawing.Color.White
+        Me.cbShowPass.Location = New System.Drawing.Point(810, 284)
+        Me.cbShowPass.Name = "cbShowPass"
+        Me.cbShowPass.Size = New System.Drawing.Size(18, 17)
+        Me.cbShowPass.TabIndex = 18
+        Me.cbShowPass.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
+        Me.cbShowPass.UncheckedState.BorderRadius = 0
+        Me.cbShowPass.UncheckedState.BorderThickness = 0
+        Me.cbShowPass.UncheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
+        Me.cbShowPass.UseVisualStyleBackColor = False
+        '
+        'frmlogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(188, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(37, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(867, 571)
+        Me.Controls.Add(Me.cbShowPass)
         Me.Controls.Add(Me.NightControlBox1)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
@@ -312,7 +333,7 @@ Partial Class frmlogin
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.MaximizeBox = False
-        Me.Name = "frmLogin"
+        Me.Name = "frmlogin"
         Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -340,6 +361,6 @@ Partial Class frmlogin
     Friend WithEvents loginSubmitBtn As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Elipse1 As Guna.UI2.WinForms.Guna2Elipse
     Friend WithEvents NightControlBox1 As ReaLTaiizor.Controls.NightControlBox
-
+    Friend WithEvents cbShowPass As Guna.UI2.WinForms.Guna2CheckBox
 End Class
 
