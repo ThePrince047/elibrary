@@ -23,66 +23,67 @@ Partial Class frmUsers
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.dgUser = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.UserIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.UsernameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.EmailDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.PasswordDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.IsAdminDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.UserTableBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.CurrentDB = New elibrary.currentDB()
         Me.UserTableBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.BooksellerDataSet1 = New elibrary.booksellerDataSet1()
         Me.BookTableBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.BookTableTableAdapter = New elibrary.booksellerDataSet1TableAdapters.bookTableTableAdapter()
         Me.UserTableTableAdapter = New elibrary.booksellerDataSet1TableAdapters.userTableTableAdapter()
-        Me.CurrentDB = New elibrary.currentDB()
-        Me.UserTableBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.UserTableTableAdapter1 = New elibrary.currentDBTableAdapters.userTableTableAdapter()
+        Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
         CType(Me.dgUser, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.UserTableBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CurrentDB, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.UserTableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BooksellerDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BookTableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.CurrentDB, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.UserTableBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'dgUser
         '
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
-        Me.dgUser.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle10.BackColor = System.Drawing.Color.White
+        Me.dgUser.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle10
         Me.dgUser.AutoGenerateColumns = False
         Me.dgUser.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.dgUser.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Raised
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgUser.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle11.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle11.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgUser.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle11
         Me.dgUser.ColumnHeadersHeight = 18
         Me.dgUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
         Me.dgUser.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.UserIDDataGridViewTextBoxColumn, Me.UsernameDataGridViewTextBoxColumn, Me.EmailDataGridViewTextBoxColumn, Me.PasswordDataGridViewTextBoxColumn, Me.IsAdminDataGridViewTextBoxColumn})
         Me.dgUser.DataSource = Me.UserTableBindingSource1
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Jellee Bold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgUser.DefaultCellStyle = DataGridViewCellStyle3
-        Me.dgUser.Dock = System.Windows.Forms.DockStyle.Fill
+        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle12.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle12.Font = New System.Drawing.Font("Jellee Bold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgUser.DefaultCellStyle = DataGridViewCellStyle12
         Me.dgUser.GridColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.dgUser.Location = New System.Drawing.Point(0, 0)
         Me.dgUser.Name = "dgUser"
         Me.dgUser.RowHeadersVisible = False
         Me.dgUser.RowHeadersWidth = 51
         Me.dgUser.RowTemplate.Height = 24
-        Me.dgUser.Size = New System.Drawing.Size(880, 530)
+        Me.dgUser.Size = New System.Drawing.Size(880, 393)
         Me.dgUser.TabIndex = 0
         Me.dgUser.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
         Me.dgUser.ThemeStyle.AlternatingRowsStyle.Font = Nothing
@@ -141,6 +142,16 @@ Partial Class frmUsers
         Me.IsAdminDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.IsAdminDataGridViewTextBoxColumn.Name = "IsAdminDataGridViewTextBoxColumn"
         '
+        'UserTableBindingSource1
+        '
+        Me.UserTableBindingSource1.DataMember = "userTable"
+        Me.UserTableBindingSource1.DataSource = Me.CurrentDB
+        '
+        'CurrentDB
+        '
+        Me.CurrentDB.DataSetName = "currentDB"
+        Me.CurrentDB.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
         'UserTableBindingSource
         '
         Me.UserTableBindingSource.DataMember = "userTable"
@@ -164,35 +175,62 @@ Partial Class frmUsers
         '
         Me.UserTableTableAdapter.ClearBeforeFill = True
         '
-        'CurrentDB
-        '
-        Me.CurrentDB.DataSetName = "currentDB"
-        Me.CurrentDB.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'UserTableBindingSource1
-        '
-        Me.UserTableBindingSource1.DataMember = "userTable"
-        Me.UserTableBindingSource1.DataSource = Me.CurrentDB
-        '
         'UserTableTableAdapter1
         '
         Me.UserTableTableAdapter1.ClearBeforeFill = True
+        '
+        'Guna2Button2
+        '
+        Me.Guna2Button2.BorderRadius = 10
+        Me.Guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Guna2Button2.FillColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(54, Byte), Integer), CType(CType(24, Byte), Integer))
+        Me.Guna2Button2.Font = New System.Drawing.Font("Jellee Bold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2Button2.ForeColor = System.Drawing.Color.White
+        Me.Guna2Button2.Location = New System.Drawing.Point(109, 421)
+        Me.Guna2Button2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Guna2Button2.Name = "Guna2Button2"
+        Me.Guna2Button2.Size = New System.Drawing.Size(181, 57)
+        Me.Guna2Button2.TabIndex = 10
+        Me.Guna2Button2.Text = "Delete User"
+        '
+        'Guna2Button1
+        '
+        Me.Guna2Button1.BorderRadius = 10
+        Me.Guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Guna2Button1.FillColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(54, Byte), Integer), CType(CType(24, Byte), Integer))
+        Me.Guna2Button1.Font = New System.Drawing.Font("Jellee Bold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2Button1.ForeColor = System.Drawing.Color.White
+        Me.Guna2Button1.Location = New System.Drawing.Point(556, 421)
+        Me.Guna2Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Guna2Button1.Name = "Guna2Button1"
+        Me.Guna2Button1.Size = New System.Drawing.Size(181, 57)
+        Me.Guna2Button1.TabIndex = 11
+        Me.Guna2Button1.Text = "Refresh Table"
         '
         'frmUsers
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(880, 530)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(880, 498)
+        Me.Controls.Add(Me.Guna2Button1)
+        Me.Controls.Add(Me.Guna2Button2)
         Me.Controls.Add(Me.dgUser)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "frmUsers"
         Me.Text = "frmUsers"
         CType(Me.dgUser, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.UserTableBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CurrentDB, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.UserTableBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BooksellerDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BookTableBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.CurrentDB, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.UserTableBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -211,4 +249,6 @@ Partial Class frmUsers
     Friend WithEvents CurrentDB As currentDB
     Friend WithEvents UserTableBindingSource1 As BindingSource
     Friend WithEvents UserTableTableAdapter1 As currentDBTableAdapters.userTableTableAdapter
+    Friend WithEvents Guna2Button2 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
 End Class

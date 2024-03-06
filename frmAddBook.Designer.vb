@@ -184,6 +184,7 @@ Partial Class frmAddBook
         Me.Controls.Add(Me.NightControlBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "frmAddBook"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "frmAddBook"
         Me.ResumeLayout(False)
         Me.PerformLayout()
