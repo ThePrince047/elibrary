@@ -22,6 +22,7 @@ Public Class frmlogin
                     txtPasswordLogin.Clear()
                     txtUsernameLogin.Clear()
                     rbAdmin.Checked = False
+                    cbShowPass.Checked = False
                     Dim frmAdminPortal As New frmAdminPortal()
                     frmAdminPortal.showDetail(username)
                     frmAdminPortal.Show()
@@ -40,6 +41,7 @@ Public Class frmlogin
                     txtPasswordLogin.Clear()
                     txtUsernameLogin.Clear()
                     rbUser.Checked = False
+                    cbShowPass.Checked = False
                     Dim frmDashboard As New frmDashboard()
                     frmDashboard.showDetail(username)
                     frmDashboard.Show()

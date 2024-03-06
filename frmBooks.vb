@@ -2,11 +2,7 @@
 Imports System.Data
 
 Public Class frmBooks
-
-
-
     Private Sub frmBooks_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'TODO: This line of code loads data into the 'CurrentDB.bookTable' table. You can move, or remove it, as needed.
         Me.BookTableTableAdapter1.Fill(Me.CurrentDB.bookTable)
         datagridshow()
     End Sub
@@ -37,14 +33,10 @@ Public Class frmBooks
                     cmd.ExecuteNonQuery()
                 End Using
             End Using
-            ' Refresh the DataGridView
-            Load_Data()
         Catch ex As Exception
             MessageBox.Show("Error inserting data: " & ex.Message)
         End Try
     End Sub
-
-
 
     Private Sub Load_Data()
         Try
@@ -68,24 +60,16 @@ Public Class frmBooks
 
     Private Sub Guna2Button2_Click(sender As Object, e As EventArgs) Handles Guna2Button2.Click
         Dim bookId As String = InputBox("Enter the Book ID to delete:", "Delete Book")
-
-        ' Check if the user canceled or provided an empty input
         If String.IsNullOrEmpty(bookId) Then
             Return
         End If
-
-        ' Perform the deletion
         Try
-            ' Connect to the database
             Using con As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\VB.net Projects\bookseller.accdb")
                 con.Open()
-                ' Define the SQL query to delete the book
                 Dim query As String = "DELETE FROM bookTable WHERE bookId = ?"
-                ' Create and execute the command
                 Using cmd As New OleDbCommand(query, con)
                     cmd.Parameters.AddWithValue("?", bookId)
                     Dim rowsAffected As Integer = cmd.ExecuteNonQuery()
-                    ' Check if any row was deleted
                     If rowsAffected > 0 Then
                         MessageBox.Show("Book deleted successfully.")
                     Else
@@ -93,9 +77,6 @@ Public Class frmBooks
                     End If
                 End Using
             End Using
-
-            ' Refresh the DataGridView
-            Load_Data()
         Catch ex As Exception
             MessageBox.Show("Error deleting book: " & ex.Message)
         End Try

@@ -4,18 +4,16 @@
             MessageBox.Show("Please fill all the fields")
             Exit Sub
         End If
-        ' Get the data from the textboxes
         Dim name As String = tbBookName.Text
         Dim author As String = tbAuthor.Text
         Dim genre As String = tbGenre.Text
 
-        ' Create an instance of the frmBooks form
         Dim frmBook As New frmBooks()
-
-        ' Call the ShowAdd method to pass data to frmBooks
         frmBook.ShowAdd(name, author, genre)
         MessageBox.Show("Book Added Successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
-        ' Show other forms or hide the current form
+        tbBookName.Text = ""
+        tbAuthor.Text = ""
+        tbGenre.Text = ""
         Me.Hide()
     End Sub
 End Class

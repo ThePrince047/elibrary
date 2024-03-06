@@ -47,9 +47,6 @@ Public Class frmUsers
                     End If
                 End Using
             End Using
-
-            ' Refresh the DataGridView
-            Load_Data()
         Catch ex As Exception
             MessageBox.Show("Error deleting book: " & ex.Message)
         End Try
