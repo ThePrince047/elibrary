@@ -41,9 +41,9 @@ Public Class frmUsers
                     Dim rowsAffected As Integer = cmd.ExecuteNonQuery()
                     ' Check if any row was deleted
                     If rowsAffected > 0 Then
-                        MessageBox.Show("Book deleted successfully.")
+                        MessageBox.Show("User deleted successfully.")
                     Else
-                        MessageBox.Show("No book found with the provided ID.")
+                        MessageBox.Show("No User found with the provided ID.")
                     End If
                 End Using
             End Using
